@@ -54,7 +54,7 @@ const CONFIG = {
                { urls: ['turn:us-0.turn.peerjs.com:3478', 'turn:eu-0.turn.peerjs.com:3478'], username: 'peerjs', credential: 'peerjsp' } ],
              fastTopics: ['snap', 'inp', 'pos'],        // messages that are re-sent many times a second anyway: they go on an unreliable 'fast lane' (a lost one is skipped, never waited for)
              attemptMs: 8000, attempts: 4, retryGapMs: 1500 },   // a guest tries the host this many times before giving up
-  social: { mailbox: '',                                    // your Cloudflare Worker's web address (server/README.md), e.g. 'https://orchard-mail.yourname.workers.dev'.
+  social: { mailbox: 'orchardmail.r-ledoux-cooper.workers.dev',                                    // your Cloudflare Worker's web address (server/README.md), e.g. 'https://orchard-mail.yourname.workers.dev'.
             pollSec: 60, baseEverySec: 600 },              // '' = no mailbox: letters only travel while both games are open. pollSec: how often to check for mail; baseEverySec: homestead snapshot for friends
   farmer:  { speed: 70, coneLength: 190, coneHalfAngle: 0.45, sweep: 0.5 },
   dog:     { speed: 135, sniffRange: 170, bushRange: 45 },
